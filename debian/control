@@ -1,0 +1,17 @@
+Source: slus
+Section: unknown
+Priority: extra
+Maintainer: Kuno Woudt <kuno@frob.nl>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+Homepage: https://frob.nl/slus/
+Vcs-Git: https://github.com/warpr/slus.git
+Vcs-Browser: https://github.com/warpr/slus/
+
+Package: slus
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-rdflib, miniupnpc
+Description: Slûs sets up UPnP port forwarding
+  Slûs is a tool to set up semi-permanent port forwarding on roaming
+  computers using UPnP.
+

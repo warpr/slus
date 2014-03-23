@@ -1,0 +1,10 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: slus
+Source: https://github.com/warpr/slus.git
+
+Files: *
+Copyright: 2014 Kuno Woudt <kuno@frob.nl>
+
+License: copyleft-next 0.3.0
+ Slûs is licensed under copyleft-next version 0.3.0, see
+ LICENSE.txt for more information.
