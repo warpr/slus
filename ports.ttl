@@ -1,0 +1,17 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix slus: <https://frob.nl/slus/ontology#> .
+
+<> rdfs:comment "
+  Copy this file to /etc/slus/ports.ttl
+
+  Slûs will runs once every hour and checks if these ports are still
+  open, if not slûs will open them.
+
+" .
+
+_:webserver a slus:Rule ;
+    rdfs:comment "webserver port" ;
+    slus:protocol "TCP" ;
+    slus:external 8080 ;
+    slus:internal 80 .

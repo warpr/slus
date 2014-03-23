@@ -1,0 +1,40 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix li: <https://licensedb.org/rdf/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix wald: <http://waldmeta.org/rdf/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix slus: <https://frob.nl/slus/ontology#> .
+
+<https://frob.nl/slus/ontology#> a owl:Ontology ;
+    dc:creator "Kuno Woudt <kuno@frob.nl>" ;
+    dc:modified "2014-03-23" ;
+    vann:preferredNamespacePrefix "slus" ;
+    vann:preferredNamespaceUri "https://frob.nl/slus/ontology#" .
+
+slus:Rule a owl:Class ;
+    rdfs:label "Rule" ;
+    rdfs:comment "a port-forwarding rule" .
+
+slus:protocol a owl:DataProperty ;
+    a owl:FunctionalProperty ;
+    rdfs:label "Protocol" ;
+    rdfs:comment "The protocol used in this rule (TCP or UDP)" ;
+    rdfs:domain slus:Rule ;
+    rdfs:range xsd:string .
+
+slus:external a owl:DataProperty ;
+    a owl:FunctionalProperty ;
+    rdfs:label "External port" ;
+    rdfs:domain slus:Rule ;
+    rdfs:range xsd:integer .
+
+slus:internal a owl:DataProperty ;
+    a owl:FunctionalProperty ;
+    rdfs:label "Internal port" ;
+    rdfs:domain slus:Rule ;
+    rdfs:range xsd:integer .
