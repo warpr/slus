@@ -31,6 +31,15 @@ On Ubuntu 13.10:
     sudo apt-get install python-rdflib miniupnpc
 
 
+Build
+=====
+
+To build a .deb file of slus:
+
+    sudo apt-get install devscripts
+    make deb
+
+
 License
 =======
 
