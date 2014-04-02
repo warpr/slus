@@ -13,3 +13,6 @@ install:
 
 deb:
 	debuild -uc -us
+
+release: deb
+	scp ../slus_*.dsc ../slus_*.tar.gz ../slus_*.deb frob.nl:slus/
