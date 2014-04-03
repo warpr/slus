@@ -2,7 +2,7 @@
 
 slus="/usr/bin/slus"
 
-[ -x $slus] || exit 0
+[ -x $slus ] || exit 0
 
 $slus > /dev/null
 
